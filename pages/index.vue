@@ -1,13 +1,19 @@
 <template>
-<div>
-  <AboutMe />
-  
-</div>
+  <div>
+    <slot />
+    <Home/>
+  </div>
 </template>
   
-  <script>
-export default {};
+<script>
+export default {
+  layout: "default",
+};
 </script>
-  
-  <style>
-</style>>
+
+<script setup>
+// your setup script
+</script>
+
+<style>
+</style>
