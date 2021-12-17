@@ -20,13 +20,13 @@
           <span>Projects</span>
         </span>
         <a-menu-item key="3">
-          <nuxt-link to="/blog/greenroomtraining"> Greenroom training </nuxt-link>
+          <nuxt-link to="/projects/greenroomtraining"> Greenroom training </nuxt-link>
         </a-menu-item>
         <a-menu-item key="4">
-          <nuxt-link to="/blog/flickR-app"> FlickR app </nuxt-link>
+          <nuxt-link to="/projects/flickR-app"> FlickR app </nuxt-link>
         </a-menu-item>
         <a-menu-item key="5">
-          <nuxt-link to="/blog/go-redis-webapp"> Go-Redis webapp </nuxt-link>
+          <nuxt-link to="/projects/go-redis-webapp"> Go-Redis webapp </nuxt-link>
         </a-menu-item>
       </a-sub-menu>
       <a-sub-menu key="sub2">
