@@ -32,7 +32,7 @@
       <a-sub-menu key="sub2">
         <span slot="title">
           <a-icon type="book" />
-          <span>Blogposts</span>
+          <span>Blog</span>
         </span>
         <a-menu-item key="6">
           <nuxt-link to="/blog/my-first-blog-post">
