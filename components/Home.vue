@@ -1,11 +1,6 @@
 <template>
   <div>
-    <a-breadcrumb class="margin-st">
-      <a-breadcrumb-item>Home</a-breadcrumb-item>
-    </a-breadcrumb>
-    <div :style="{ padding: '24px', background: '#fff', minHeight: '360px' }">
-      Some info here
-    </div>
+<h2>Will display a nice landing layout here</h2>
   </div>
 </template>
 
@@ -13,5 +8,6 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+
 </style>

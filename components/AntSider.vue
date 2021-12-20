@@ -9,7 +9,7 @@
         </nuxt-link>
       </a-menu-item>
       <a-menu-item key="2">
-        <nuxt-link to="/user">
+        <nuxt-link to="/aboutme">
           <a-icon type="user" />
           <span>Andreas Lind</span>
         </nuxt-link>

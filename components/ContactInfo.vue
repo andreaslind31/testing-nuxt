@@ -5,14 +5,32 @@
       <a-breadcrumb-item>Contact</a-breadcrumb-item>
     </a-breadcrumb>
     <div :style="{ padding: '24px', background: '#fff', minHeight: '360px' }">
-      Some info for contact me here
+      <h3 :style="{ margin: '16px 0' }">Contact me here</h3>
+      <a-list size="small" bordered :data-source="data">
+        <a-list-item slot="renderItem" slot-scope="item">
+          <a :href="item">{{ item }}</a>
+        </a-list-item>
+      </a-list>
     </div>
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style>
 </style>
+  
+<script>
+const data = [
+  "https://github.com/andreaslind31",
+  "https://www.linkedin.com/in/andreas-lind31/",
+  "https://medium.com/@andreaslind31",
+  "andreaslind31@gmail.com"
+];
+
+export default {
+  data() {
+    return {
+      data,
+    };
+  },
+};
+</script>

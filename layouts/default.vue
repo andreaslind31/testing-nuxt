@@ -3,7 +3,7 @@
     <AntSider />
     <a-layout>
       <a-layout-header class="bg-standard p-0">
-        <h3 class="text-center">My portfolio</h3>
+        <h3 class="text-center">Andreas Lind</h3>
       </a-layout-header>
       <a-layout-content class="margin-rs">
           <Nuxt></Nuxt>
@@ -16,9 +16,7 @@
 </template>
 
 <script>
-export default {
-  layout: "default",
-};
+
 </script>
 
 <style>
@@ -26,6 +24,24 @@ export default {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);
   margin: 16px;
+}
+.nuxt-content h2 {
+    font-weight: bold;
+    font-size: 28px;
+}
+.nuxt-content h3 {
+    font-weight: bold;
+    font-size: 22px;
+}
+.nuxt-content p {
+    margin-bottom: 20px;
+}
+.icon.icon-link {
+  background-image: url('~assets/svg/icon-hashtag.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
 }
 .margin-rs {
   margin: 0 16px;
