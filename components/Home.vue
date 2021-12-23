@@ -1,6 +1,7 @@
 <template>
   <div>
-<h2>Will display a nice landing layout here</h2>
+    <h2>Will display a nice landing layout here</h2>
+    <AntGrid/>
   </div>
 </template>
 
@@ -9,5 +10,4 @@ export default {};
 </script>
 
 <style scoped>
-
 </style>
