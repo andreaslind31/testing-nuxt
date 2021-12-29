@@ -7,7 +7,6 @@
       </div>
       <!-- Otherwise show a section for our portfolio projects and skills section-->
       <section id="portfolio" v-else>
-        <h4>Code from GitHub</h4>
         <!-- loading message -->
         <div class="loading" v-if="loading">
           Loading projects & skills from GitHub ...
@@ -71,6 +70,7 @@
 export default {
   data() {
     return {
+      data: [],
       projects: [],
       projectsList: null,
       skills: [],
@@ -83,22 +83,24 @@ export default {
     };
   },
   methods: {
-    fetchData: function () {
-      axios
-        .get(
+    async fetchData() {
+      await this.$axios
+        .$get(
           `https://api.github.com/users/andreaslind31/repos?per_page=${this.perPage}&page=${this.page}`
         )
         .then((response) => {
           console.log(response);
-          this.projects = response.data;
-          this.projects.forEach((project) => {
+          this.data = response.data;
+          let temp = this;
+          this.data.forEach((data) => {
             if (
-              project.language !== null &&
-              !this.skills.includes(project.language)
+              data.language !== null &&
+              !this.skills.includes(data.language)
             ) {
-              this.skills.push(project.language);
+              this.skills.push(data.language);
             }
           });
+          temp.projects = temp.data;
         })
         .catch((error) => {
           console.log(error);
@@ -110,6 +112,7 @@ export default {
         });
     },
     getProjects() {
+      console.log(this.projects);
       this.projectsList = this.projects.slice(0, this.projectsCount);
       return this.projectsList;
     },
@@ -142,7 +145,6 @@ export default {
 </script>
 
 <style scoped>
-
 * {
   margin: 0;
   padding: 0;
@@ -496,5 +498,4 @@ footer {
     background-size: 30%;
   }
 }
-
 </style>

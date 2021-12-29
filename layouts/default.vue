@@ -20,6 +20,40 @@
 </script>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: white;
+ text-decoration: none;   
+}
+a:hover {
+    color:#DB5461;
+    
+}
+.home {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    color: white;
+    /* background: linear-gradient(116.82deg, #3D5467 0%, #1A232B 99.99%, #333333 100%); */
+    background: linear-gradient(117deg, #002140 0%, #1C3A4F 99.99%, #002140 100%);
+}
+.d_none {
+    display: none;
+}
+.d_flex {
+    display: flex;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.loading {
+    font-size: 2rem;
+}
 #components-layout-demo-side .logo {
   height: 32px;
   background: rgba(255, 255, 255, 0.2);
