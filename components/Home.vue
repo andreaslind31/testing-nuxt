@@ -3,11 +3,11 @@
     <main class='home'>
         <div class="about__me">
             <img src="~/assets/jpg/IMG_3355.JPG" alt="me" />
-            <h1><nuxt-link to="/projectlist" class="reversed_link"> Andreas Lind </nuxt-link></h1>
+            <h1><nuxt-link to="/aboutme" class="reversed_link"> Andreas Lind </nuxt-link></h1>
             <h3>.NET student</h3>
             <p>A father and a well-structured developer student with years of experience <br>from the Swedish Armed Forces.</p>
             <div class="skills_projects_link">
-                <nuxt-link to="/projectlist"> Projects | Skills </nuxt-link>
+                <h3><nuxt-link to="/projectlist"> Projects | Skills </nuxt-link></h3>
             </div>
         </div>
     </main>
@@ -70,13 +70,28 @@ img {
     transition: all 0.5s ease-in-out;
 }
 .skills_projects_link {
-    margin: 20px 0 0;
-    font-size: 36px;
-    font-weight: 900;
+    position: relative;
     color: white;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
 }
 .skills_projects_link:hover {
     color: #DB5461;
     transition: all 0.5s ease-in-out;
+}
+.skills_projects_link:hover::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin: auto;
+    text-align: center;
+    content: "";
+    width: 160px;
+    height: 2px;
+    background-color: #DB5461;
+    transition: background-color 0.5s ease-in-out;
+
 }
 </style>
