@@ -5,12 +5,7 @@
       <img class="hero" src="~assets/jpg/IMG_3355.JPG" />
     </a-col>
     <a-col :span="6">
-      <a-page-header
-        title="So this is me"
-        sub-title="A well-disciplined father and developer student with years of experience from the Swedish Armed Forces. "
-        @back="() => null"
-      >
-      </a-page-header>
+      <p>So this is me</p>
       <nuxt-link to="/projectlist"><h2>Check out my projects</h2></nuxt-link>
     </a-col>
   </a-row>
@@ -22,7 +17,15 @@ export default {};
 </script>
 
 <style scoped>
+main .aboutMe {
+    width: 100%;
+    margin-top: 2%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .hero {
-  width: 85%;
+  width: 90%;
 }
 </style>
