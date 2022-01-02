@@ -35,8 +35,19 @@ ssr: false,
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content', '@nuxtjs/axios'
+    '@nuxt/content', '@nuxtjs/axios', '@nuxtjs/pwa'
   ],
+  pwa: {
+    icon: {
+      fileName : 'test-AL-logo.png',
+      sizes: [64, 120, 144, 152, 192, 384, 512]
+    },
+    manifest: {
+      name: 'My Portfolio',
+      lang: 'fa',
+      useWebmanifestExtension: false
+    }
+  },
   axios: {
     // proxy: true
   },
