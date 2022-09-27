@@ -1,17 +1,20 @@
 <template>
-  <div>
-    <main class='home'>
-        <div class="about__me">
-            <img src="~/assets/jpg/IMG_3355.JPG" alt="me" />
-            <h1><nuxt-link to="/aboutme" class="reversed_link"> Andreas Lind </nuxt-link></h1>
-            <h3>.NET student</h3>
-            <p>A father and a well-structured developer student with years of experience <br>from the Swedish Armed Forces.</p>
-            <div class="skills_projects_link">
-                <h3><nuxt-link to="/projectlist"> Projects | Skills </nuxt-link></h3>
+    <div>
+        <main class='home'>
+            <div class="about__me">
+                <img src="~/assets/jpg/IMG_3355.JPG" alt="me" />
+                <h1>
+                    <nuxt-link to="/aboutme" class="reversed_link"> Andreas Lind </nuxt-link>
+                </h1>
+                <p>jr software engineer at <a href="https://www.fasttrack-solutions.com/en">fast track</a></p>
+                <div class="skills_projects_link">
+                    <h3>
+                        <nuxt-link to="/projectlist"> Projects | skills </nuxt-link>
+                    </h3>
+                </div>
             </div>
-        </div>
-    </main>
-  </div>
+        </main>
+    </div>
 </template>
 
 <script>
@@ -28,47 +31,57 @@ main .home {
     align-items: center;
     padding-bottom: 4%;
 }
+
 .about__me {
     text-align: center;
     width: 80%;
     line-height: 1.5rem;
 }
+
 h1 {
     margin: 20px 0 0;
     font-size: 36px;
     font-weight: 900;
     color: #DB5461;
 }
+
 h3 {
     font-size: 28px;
     font-weight: 500;
 
 }
-h1, h3  {
+
+h1,
+h3 {
     font-style: normal;
     line-height: 42px;
     letter-spacing: 0.115em;
 
 }
+
 p {
     font-weight: 100;
     font-size: 22px;
     padding: 2rem;
 }
+
 img {
     margin-top: 0.5%;
-    width:80%;
+    width: 80%;
 }
+
 .reversed_link {
     margin: 20px 0 0;
     font-size: 36px;
     font-weight: 900;
     color: #DB5461;
 }
+
 .reversed_link:hover {
     color: white;
     transition: all 0.5s ease-in-out;
 }
+
 .skills_projects_link {
     position: relative;
     color: white;
@@ -76,10 +89,12 @@ img {
     font-size: 18px;
     line-height: 21px;
 }
+
 .skills_projects_link:hover {
     color: #DB5461;
     transition: all 0.5s ease-in-out;
 }
+
 .skills_projects_link:hover::after {
     position: absolute;
     left: 50%;
